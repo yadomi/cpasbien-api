@@ -59,22 +59,16 @@ var CPBAPI = function () {
     }
   }, {
     key: 'Search',
-    value: function Search(query) {
-      var options = arguments.length <= 1 || arguments[1] === undefined ? { scope: 'movies', language: 'FR' } : arguments[1];
-
-      var params = Configurable.get(options);
+    value: function Search(query, options) {
+      var params = Configurable.get(Object.assign({ scope: 'movies', language: 'FR' }, options));
       var URL = Settings.DOMAIN + '/recherche/' + params.scope + params.language + '/' + encodeURI(query.toLowerCase()) + '.html';
-      console.log(URL);
       return this._crawl(URL);
     }
   }, {
     key: 'Latest',
-    value: function Latest() {
-      var options = arguments.length <= 0 || arguments[0] === undefined ? { scope: 'movies', language: 'FR' } : arguments[0];
-
-      var params = Configurable.get(options);
+    value: function Latest(options) {
+      var params = Configurable.get(Object.assign({ scope: 'movies', language: 'FR' }, options));
       var URL = Settings.DOMAIN + '/top-100.php?filtre=' + params.scope + params.language;
-      console.log(URL);
       return this._crawl(URL);
     }
   }]);
@@ -82,4 +76,4 @@ var CPBAPI = function () {
   return CPBAPI;
 }();
 
-module.exports.CPBAPI = CPBAPI;
+module.exports = CPBAPI;

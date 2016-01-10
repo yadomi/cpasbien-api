@@ -24,7 +24,6 @@ api.Latest()
 api.Search('harry poter', {language: 'EN'})
   .then(console.log.bind(console))
 
-
 api.Search('fringe', {scope: 'tvshow'})
   .then(console.log.bind(console))
 

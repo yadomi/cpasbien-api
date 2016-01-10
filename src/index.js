@@ -59,4 +59,4 @@ class CPBAPI {
 
 }
 
-module.exports.CPBAPI = CPBAPI
+module.exports = CPBAPI

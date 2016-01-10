@@ -5,4 +5,34 @@ cpabien-api
 
 ---
 
+Introduction
+------------
+
 Scrapper API for french torrent site [cpabien.io](http://cpabien.io)
+
+Usage
+-----
+
+```js
+
+const CPBAPI = require('cpabien-api')
+const api = new CPBAPI()
+
+api.Latest()
+  .then(console.log.bind(console))
+
+api.Search('harry poter', {language: 'EN'})
+  .then(console.log.bind(console))
+
+
+api.Search('fringe', {scope: 'tvshow'})
+  .then(console.log.bind(console))
+
+```
+
+---
+
+Disclaimer
+---------
+
+I'm not the author of cpabien.io, nor me or any contributor are responsable of any eventual illegal use of this software.

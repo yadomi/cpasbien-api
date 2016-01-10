@@ -1,4 +1,4 @@
-cpabien-api
+cpasbien-api
 ===========
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
@@ -8,14 +8,14 @@ cpabien-api
 Introduction
 ------------
 
-Scrapper API for french torrent site [cpabien.io](http://cpabien.io)
+Scrapper API for french torrent site [cpasbien.io](http://www.cpasbien.io)
 
 Usage
 -----
 
 ```js
 
-const CPBAPI = require('cpabien-api')
+const CPBAPI = require('cpasbien-api')
 const api = new CPBAPI()
 
 api.Latest()
@@ -35,4 +35,4 @@ api.Search('fringe', {scope: 'tvshow'})
 Disclaimer
 ---------
 
-I'm not the author of cpabien.io, nor me or any contributor are responsable of any eventual illegal use of this software.
+I'm not the author of cpasbien.io, nor me or any contributor are responsable of any eventual illegal use of this software.

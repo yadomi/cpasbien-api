@@ -72,6 +72,13 @@ var CPBAPI = function () {
       var URL = Settings.DOMAIN + '/top-100.php?filtre=' + params.scope + params.language
       return this._crawl(URL)
     }
+  }, {
+    key: 'Latest',
+    value: function Latest (options) {
+      var params = Configurable.get(Object.assign({ scope: 'movies', language: 'FR' }, options))
+      var URL = Settings.DOMAIN + '/view_cat.php?categorie=' + params.scope
+      return this._crawl(URL)
+    }
   }])
 
   return CPBAPI

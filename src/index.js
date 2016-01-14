@@ -57,6 +57,12 @@ class CPBAPI {
     return this._crawl(URL)
   }
 
+  Latest(options) {
+    const params = Configurable.get(Object.assign({scope: 'movies', language: 'FR'}, options))
+    const URL = `${Settings.DOMAIN}/view_cat.php?categorie=${params.scope}`
+    return this._crawl(URL)
+  }
+
 }
 
 module.exports = CPBAPI

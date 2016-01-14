@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "author": "Felix Yadomi <felix.yadomi@gmail.com>",
   "description": "Scrapper API for french torrent site cpasbien.io",
-  "keywords": ["cpasbien", "torrent", "scrapper", "api"],
+  "keywords": [
+    "cpasbien",
+    "torrent",
+    "scrapper",
+    "api"
+  ],
   "main": "dist/index.js",
   "engines": {
     "node": "4.2.0"
@@ -24,6 +29,7 @@
     "babel-preset-es2015": "^6.3.13",
     "cheerio": "^0.19.0",
     "request": "^2.67.0",
+    "standard": "^5.4.1",
     "urlify": "^0.3.6"
   }
 }

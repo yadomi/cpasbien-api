@@ -10,7 +10,10 @@
     "url": "https://github.com/yadomi/cpasbien-api"
   },
   "scripts": {
-    "build": "babel src -d dist/"
+    "lint": "standard ./src",
+    "test": "echo 0 > /dev/null",
+    "build": "babel src -d dist/",
+    "prebuild": "npm run lint"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.3.13",

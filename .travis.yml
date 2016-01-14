@@ -6,7 +6,8 @@ install:
   - npm install
 
 script:
-  - npm build
+  - npm run lint
+  - npm run build
 
 deploy:
   skip_cleanup: true

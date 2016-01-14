@@ -6,23 +6,23 @@ const urlify = require('urlify').create({
 })
 
 class Extractor {
-  getTorrentURL (item) {
+  getTorrentURL(item) {
     const torrentName = urlify(this.getTitle(item).toLowerCase())
     return `${Settings.DOMAIN}/telechargement/${torrentName}.torrent`
   }
-  getTitle (item) {
+  getTitle(item) {
     return item.find('.titre').text()
   }
-  getSeeds (item) {
+  getSeeds(item) {
     return item.find('.up .seed_ok').text()
   }
-  getLeechs (item) {
+  getLeechs(item) {
     return item.find('.down').text()
   }
-  getSize (item) {
+  getSize(item) {
     return item.find('.poid').text()
   }
-  getCover (item) {
+  getCover(item) {
     const coverName = urlify(this.getTitle(item).toLowerCase())
     return `${Settings.DOMAIN}/_pictures/${coverName}.jpg`
   }

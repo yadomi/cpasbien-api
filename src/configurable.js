@@ -1,6 +1,6 @@
 class Configurable {
 
-  get (options) {
+  get(options) {
     const queryParams = {
       movies: {
         scope: 'films',

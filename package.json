@@ -5,6 +5,9 @@
   "description": "Scrapper API for french torrent site cpasbien.io",
   "keywords": ["cpasbien", "torrent", "scrapper", "api"],
   "main": "dist/index.js",
+  "engines": {
+    "node": "4.2.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/yadomi/cpasbien-api"

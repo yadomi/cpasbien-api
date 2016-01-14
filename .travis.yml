@@ -16,7 +16,7 @@ deploy:
   api_key:
     secure: AIRlhRhFPs1bYFVhR/ikMnT5R0q6Ya+Pa1tQ0NnR88RjwpK+8Ct41jtBK1X6rybVxqlIsypVaEnEMvQOuljQ4ynMf8EjJu7ZX+D18sBoRWQ1xIVtggM50FGcYe3SHvZkrWuQNiXnPRHPOFhgXhOOr1rB8jL4zMnhQBm/ZRBOHLOuB877BAWU0p8pOLm51SUR1+UIUn1lFMqH7EvmHSjK5auw10Q0i67Bh7TXdJWleCFwZMAvE9zZlVvHIWafTPQ6BQCtI/kumyIAfbmT+jGxp2h5R4si0Z0ryp3/8M2mQB0A1ZhtWxWaQcrkc/kuhXilIjqDlROeByKz5iVqCosB/w0Ctv3ZxSIqRtt3GVmQBiTiBcHY12HyfTO2TRshRqwnvM9OoujYXfUiX+1CfYVWhy0/bQIL9Bm4Ydi6M1e5K68G0OjP95vkV0zk2fnfCBr4oqcEsFGOXg7//MP31k/3vj2IiwaSaaGmx8ZVJceA3JRdZ8ohieDKOdJbS6kqT1gwo/4Qld3b5wgQZ+AyqSvmvmWTJ+UFhud1Afpw0A1OlxP9p6tDlMGCRWjYLs9weHoQq+zz+qJ72F0hD3UrJw2WseE0pv+DE7q8dN35BSw0sdUp0tqa0MC0AuhCIi4lneGv6jxIvRbh116BCEMMMlmuG7pFVRiYOwtJOBMSEL+rFAo=
   on:
-    branch: master
+    tags: true
 
 cache:
   directories:

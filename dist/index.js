@@ -66,8 +66,8 @@ var CPBAPI = function () {
       return this._crawl(URL)
     }
   }, {
-    key: 'Latest',
-    value: function Latest (options) {
+    key: 'Top',
+    value: function Top (options) {
       var params = Configurable.get(Object.assign({ scope: 'movies', language: 'FR' }, options))
       var URL = Settings.DOMAIN + '/top-100.php?filtre=' + params.scope + params.language
       return this._crawl(URL)

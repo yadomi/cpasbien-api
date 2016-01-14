@@ -51,7 +51,7 @@ class CPBAPI {
     return this._crawl(URL)
   }
 
-  Latest(options) {
+  Top(options) {
     const params = Configurable.get(Object.assign({scope: 'movies', language: 'FR'}, options))
     const URL = `${Settings.DOMAIN}/top-100.php?filtre=${params.scope}${params.language}`
     return this._crawl(URL)

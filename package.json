@@ -21,7 +21,7 @@
     "url": "https://github.com/yadomi/cpasbien-api/issues"
   },
   "scripts": {
-    "lint": "standard ./src",
+    "lint": "standard ./src/**/*.js",
     "test": "echo 0 > /dev/null",
     "build": "babel src -d dist/"
   },

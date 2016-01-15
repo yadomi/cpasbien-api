@@ -1,6 +1,6 @@
 {
   "name": "cpasbien-api",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "Felix Yadomi <felix.yadomi@gmail.com>",
   "description": "Scrapper API for french torrent site cpasbien.io",
   "keywords": [

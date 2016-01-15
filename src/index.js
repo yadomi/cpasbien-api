@@ -9,7 +9,7 @@ const Configurable = require('./configurable.js')
 
 class CPBAPI {
 
-  _createItemObject (item) {
+  _createItemObject(item) {
     return {
       title: Extractor.getTitle(item),
       cover: Extractor.getCover(item),
@@ -20,13 +20,13 @@ class CPBAPI {
     }
   }
 
-  _createPagination (pagination) {
+  _createPagination(pagination) {
     return {
       next: pagination.find('a:last-child').attr('href')
     }
   }
 
-  _crawl (URI) {
+  _crawl(URI) {
     return new Promise((resolve, reject) => {
       request(URI, (err, res, html) => {
         if (err) reject(err)
@@ -45,15 +45,21 @@ class CPBAPI {
     })
   }
 
-  Search (query, options) {
+  Search(query, options) {
     const params = Configurable.get(Object.assign({scope: 'movies', language: 'FR'}, options))
     const URL = `${Settings.DOMAIN}/recherche/${params.scope}${params.language}/${encodeURI(query.toLowerCase())}.html`
     return this._crawl(URL)
   }
 
-  Latest (options) {
+  Top(options) {
     const params = Configurable.get(Object.assign({scope: 'movies', language: 'FR'}, options))
     const URL = `${Settings.DOMAIN}/top-100.php?filtre=${params.scope}${params.language}`
+    return this._crawl(URL)
+  }
+
+  Latest(options) {
+    const params = Configurable.get(Object.assign({scope: 'movies', language: 'FR'}, options))
+    const URL = `${Settings.DOMAIN}/view_cat.php?categorie=${params.scope}`
     return this._crawl(URL)
   }
 

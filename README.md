@@ -37,3 +37,16 @@ Disclaimer
 ---------
 
 I'm not the author of cpasbien.io, nor me or any contributor are responsable of any eventual illegal use of this software.
+
+Changelog
+---------
+
+### 1.1.0
+
+- The `Latest()` method now which now return the latest movies or tvshow
+- The previous behavor of `Latest()` is now `Top()` which return the top 100
+
+### 1.0.0
+
+- Initial release
+

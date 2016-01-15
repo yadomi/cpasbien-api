@@ -3,6 +3,10 @@ cpasbien-api
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
+[![TravisCI](https://img.shields.io/travis/yadomi/cpasbien-api/master)](https://travis-ci.org/yadomi/cpasbien-api)
+
+[![Version](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/cpasbien-api)
+
 ---
 
 Introduction

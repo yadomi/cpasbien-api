@@ -4,6 +4,7 @@ cpasbien-api
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![TravisCI](https://img.shields.io/travis/yadomi/cpasbien-api/master.svg)](https://travis-ci.org/yadomi/cpasbien-api)
 [![Version](https://img.shields.io/npm/v/cpasbien-api.svg)](https://www.npmjs.com/package/cpasbien-api)
+[![Dependency Status](https://gemnasium.com/badges/github.com/yadomi/cpasbien-api.svg)](https://gemnasium.com/github.com/yadomi/cpasbien-api)
 
 ---
 

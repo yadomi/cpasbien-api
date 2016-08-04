@@ -8,7 +8,7 @@ cpasbien-api
 Introduction
 ------------
 
-Scrapper API for french torrent site [cpasbien.io](http://www.cpasbien.io)
+Scrapper API for french torrent site [cpasbien.cm](http://www.cpasbien.cm)
 
 Usage
 -----

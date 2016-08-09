@@ -11,7 +11,7 @@ cpasbien-api
 Introduction
 ------------
 
-Scrapper API for french torrent site [cpasbien.io](http://www.cpasbien.io)
+Scrapper API for french torrent site [cpasbien.cm](http://www.cpasbien.cm)
 
 Usage
 -----
@@ -37,7 +37,7 @@ api.Search('fringe', {scope: 'tvshow'})
 Disclaimer
 ---------
 
-I'm not the author of cpasbien.io, nor me or any contributor are responsable of any eventual illegal use of this software.
+I'm not the author of cpasbien.cm, nor me or any contributor are responsable of any eventual illegal use of this software.
 
 Changelog
 ---------

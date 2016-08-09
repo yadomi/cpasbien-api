@@ -42,6 +42,10 @@ I'm not the author of cpasbien.cm, nor me or any contributor are responsable of 
 Changelog
 ---------
 
+### 1.1.1
+
+- Update domain extension to .cm
+
 ### 1.1.0
 
 - The `Latest()` method now which now return the latest movies or tvshow

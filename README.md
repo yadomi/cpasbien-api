@@ -42,6 +42,11 @@ I'm not the author of cpasbien.cm, nor me or any contributor are responsable of 
 Changelog
 ---------
 
+### 1.1.2
+
+- Update dependencies
+- Removed engine propertie of the file `package.json`
+
 ### 1.1.1
 
 - Update domain extension to .cm

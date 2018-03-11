@@ -8,7 +8,6 @@ const Extractor = require('./extractor.js')
 const Configurable = require('./configurable.js')
 
 class CPBAPI {
-
   _createItemObject (item) {
     return {
       title: Extractor.getTitle(item),
@@ -62,7 +61,6 @@ class CPBAPI {
     const URL = `${Settings.DOMAIN}/view_cat.php?categorie=${params.scope}`
     return this._crawl(URL)
   }
-
 }
 
 module.exports = CPBAPI

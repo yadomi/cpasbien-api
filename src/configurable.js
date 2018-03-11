@@ -1,5 +1,4 @@
 class Configurable {
-
   get (options) {
     const queryParams = {
       movies: {
@@ -22,7 +21,6 @@ class Configurable {
       language: queryParams[options.scope].language[options.language]
     }
   }
-
 }
 
 module.exports = new Configurable()
